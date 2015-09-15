@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="SeleniumTemp">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../New_Eclipse/eclipse-jee-juno-SR1-RC3-win32/eclipse"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="SeleniumTemp.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/commons-codec-1.9.jar"/>
+        <pathelement location="lib/commons-logging-1.1.3.jar"/>
+        <pathelement location="lib/guice-3.0.jar"/>
+        <pathelement location="lib/junit-4.11.jar"/>
+        <pathelement location="lib/log4j-1.2.17.jar"/>
+        <pathelement location="lib/poi-3.11-20141221.jar"/>
+        <pathelement location="lib/poi-examples-3.11-20141221.jar"/>
+        <pathelement location="lib/poi-excelant-3.11-20141221.jar"/>
+        <pathelement location="lib/poi-ooxml-3.11-20141221.jar"/>
+        <pathelement location="lib/poi-ooxml-schemas-3.11-20141221.jar"/>
+        <pathelement location="lib/poi-scratchpad-3.11-20141221.jar"/>
+        <pathelement location="lib/reportng-1.1.4.jar"/>
+        <pathelement location="lib/selenium-server-standalone-2.45.0.jar"/>
+        <pathelement location="lib/testng-6.8.6beta.jar"/>
+        <pathelement location="lib/velocity-dep-1.4.jar"/>
+        <pathelement location="lib/xmlbeans-2.6.0.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="SeleniumTemp.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="MainTestNG (2)">
+        <java classname="util.MainTestNG" failonerror="true" fork="yes">
+            <classpath refid="SeleniumTemp.classpath"/>
+        </java>
+    </target>
+           	<target name="xslt" depends="MainTestNG (2)">
+              	                 
+              	     <xslt in="${basedir}/testng_output/testng-results.xml" style="${basedir}/testng-results.xsl" out="${basedir}/testng-xslt/index.html" processor="SaxonLiaison">
+              	                        
+              	            <param expression="${basedir}/testng-xslt/" name="testNgXslt.outputDir" />
+
+              	             <param expression="true" name="testNgXslt.sortTestCaseLinks" />
+
+              	             <param expression="FAIL,SKIP,PASS,CONF,BY_CLASS" name="testNgXslt.testDetailsFilter" />
+
+              	             <param expression="true" name="testNgXslt.showRuntimeTotals" />
+
+              	             <classpath refid="master-classpath">
+              	            </classpath>
+              	        </xslt>
+              	    </target>
+</project>

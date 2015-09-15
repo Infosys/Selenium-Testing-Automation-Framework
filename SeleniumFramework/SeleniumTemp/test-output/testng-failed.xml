@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" configfailurepolicy="skip" verbose="1" name="Failed suite [SeleniumTemp]" skipfailedinvocationcounts="false" parallel="false" annotations="JDK" data-provider-thread-count="10">
+  <test verbose="1" name="util.ExecuteTestCases(failed)" junit="false" parallel="false" annotations="JDK">
+    <classes>
+      <class name="util.ExecuteTestCases">
+        <methods>
+          <include name="testData"/>
+          <include name="testSample1" invocation-numbers="0"/>
+          <include name="cleanup"/>
+          <include name="setup"/>
+          <include name="setResultTestName"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

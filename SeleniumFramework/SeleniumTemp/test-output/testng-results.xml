@@ -1,0 +1,171 @@
+<testng-results>
+  <reporter-output>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[listOfTestCases=============*****************[TC001]]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of rows]]>
+    </line>
+    <line>
+      <![CDATA[sheetNameTC002_DS----sheetName, pathOFFileD:\Selenium Framework development\Google\KSHOP.xlsx]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of columns]]>
+    </line>
+    <line>
+      <![CDATA[sheetNameTC001_DS----sheetName, pathOFFileD:\Selenium Framework development\Google\KSHOP.xlsx]]>
+    </line>
+    <line>
+      <![CDATA[getting total number of columns]]>
+    </line>
+    <line>
+      <![CDATA[size====2]]>
+    </line>
+    <line>
+      <![CDATA[column valueee======[cricket]]]>
+    </line>
+    <line>
+      <![CDATA[column value size===========1]]>
+    </line>
+    <line>
+      <![CDATA[testCaseExecution======================1]]>
+    </line>
+    <line>
+      <![CDATA[TC001]]>
+    </line>
+  </reporter-output>
+  <suite name="SeleniumTemp" duration-ms="72500" started-at="2015-04-27T11:18:29Z" finished-at="2015-04-27T11:19:42Z">
+    <groups>
+    </groups>
+    <test name="util.ExecuteTestCases" duration-ms="72500" started-at="2015-04-27T11:18:29Z" finished-at="2015-04-27T11:19:42Z">
+      <class name="util.ExecuteTestCases">
+        <test-method status="PASS" signature="setup()" test-instance-name=" " name="setup" is-config="true" duration-ms="10269" started-at="2015-04-27T11:18:29Z" finished-at="2015-04-27T11:18:39Z">
+        </test-method>
+        <test-method status="PASS" signature="testData([Ljava.lang.Object;)" test-instance-name=" " name="testData" is-config="true" duration-ms="0" started-at="2015-04-27T11:18:39Z" finished-at="2015-04-27T11:18:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@b4cef0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="FAIL" signature="testSample1(java.lang.String)" test-instance-name=" " name="testSample1" duration-ms="61607" started-at="2015-04-27T11:18:39Z" finished-at="2015-04-27T11:19:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC001]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.fail(Assert.java:96)
+	at util.ExecuteTestCases.testSample1(ExecuteTestCases.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+	at org.testng.TestRunner.privateRun(TestRunner.java:727)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="cleanup()" test-instance-name=" " name="cleanup" is-config="true" duration-ms="468" started-at="2015-04-27T11:19:41Z" finished-at="2015-04-27T11:19:42Z">
+        </test-method>
+        <test-method status="PASS" signature="setResultTestName(org.testng.ITestResult)" test-instance-name=" " name="setResultTestName" is-config="true" duration-ms="0" started-at="2015-04-27T11:19:42Z" finished-at="2015-04-27T11:19:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult: testSample1 STATUS:FAILURE METHOD:util.ExecuteTestCases.testSample1(java.lang.String)size====2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
