@@ -8,7 +8,7 @@ How to build
 Unzip the selenium OSTAF zip to a folder on local machine
 Open Command Prompt as administrator
 Change directory to the folder containing the OSTAF code base
-run the command "maven install" and click enter Key in keyboard
+run the command "mvn install" and click enter Key in keyboard
 
 ---User need to navigate the command prompt to the project path and then need to type mvn install and enter the build will happen.
 
